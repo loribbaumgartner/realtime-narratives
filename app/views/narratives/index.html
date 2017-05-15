@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <head>
   <title>Pusher Test</title>
-  <body>
-    Pusher Page
-  </body>
-  <script src="https://js.pusher.com/4.0/pusher.min.js"></script>
-  <script>
-
-    // Enable pusher logging - don't include this in production
-    Pusher.logToConsole = true;
-
-    var pusher = new Pusher('0921d05e113bd5ac4866', {
-      cluster: 'us2',
-      encrypted: true
-    });
-
-    var channel = pusher.subscribe('my-channel');
-    channel.bind('my-event', function(data) {
-      alert(data.message);
-    });
-  </script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2>Pusher Page</h2>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://js.pusher.com/4.0/pusher.min.js"></script>
+<script>
+
+  // Enable pusher logging - don't include this in production
+  Pusher.logToConsole = true;
+
+  var pusher = new Pusher('0921d05e113bd5ac4866', {
+    cluster: 'us2',
+    encrypted: true
+  });
+
+  var channel = pusher.subscribe('my-channel');
+  channel.bind('my-event', function(data) {
+    alert(data.message);
+  });
+</script>
