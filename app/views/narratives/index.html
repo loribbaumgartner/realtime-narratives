@@ -6,20 +6,54 @@
   </body>
   <script src="https://js.pusher.com/4.0/pusher.min.js"></script>
   <script>
-
     // Enable pusher logging - don't include this in production
     Pusher.logToConsole = true;
-
     var pusher = new Pusher('0921d05e113bd5ac4866', {
       cluster: 'us2',
       encrypted: true
     });
-
     var channel = pusher.subscribe('my-channel');
     channel.bind('my-event', function(data) {
       alert(data.message);
     });
   </script>
+<link rel="parent" href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet" target="_blank">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
-
-<marquee> TEST </marquee>
+<style>
+.generated {
+  font-size: 25px;
+  font-family: 'Bungee Shade', cursive;
+  background-color:#353535;
+  color:#5ea0ec;
+}
+.number {
+  font-size: 200px;
+  font-family: 'Bungee Shade', cursive;
+  background-color:#353535;
+  color:#5ea0ec;
+}
+.fact {
+  font-size: 15px;
+  font-family: 'Bungee Shade';  
+}
+</style>
+<center>
+<div class="number">
+3421
+<div class="generated">Narratives Generated Today by Wordsmith</div>
+</div>
+<br>
+<br>
+<div class="row">
+  <div class="span4">I<img src="https://media.giphy.com/media/MuztdWJQ4PR7i/giphy.gif" /> </div>
+  <div class="span5"><div class='fact'>Allen R. Astles (UK) potted 10,000 winks in 3 hr 51 min 46 sec at Aberystwyth, Ceredigion, UK in February 1966.
+</div></div>
+</div>
+</center>
+</html>
