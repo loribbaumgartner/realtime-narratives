@@ -1,0 +1,3 @@
+class Narrative < ApplicationRecord
+  
+end
