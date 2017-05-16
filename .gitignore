@@ -20,7 +20,12 @@
 /node_modules
 /yarn-error.log
 
+<<<<<<< HEAD
 .ruby-gemset
 .ruby-version
+=======
+/config/application.yml
+/config/secrets.yml
+>>>>>>> 5443517a3b8062992ab004922e69cb75c0cc03a4
 
 .byebug_history
